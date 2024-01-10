@@ -17,8 +17,6 @@ FROM (
          0 AS sort_order
     FROM
         {user_enrolments} user_enrolments
-    LEFT JOIN
-        {enrol} enrol ON enrol.id = user_enrolments.enrolid
 
     -- Blank line to seperate the total enrolled line
     UNION ALL
